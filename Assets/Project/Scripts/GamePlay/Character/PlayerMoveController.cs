@@ -3,10 +3,11 @@ using UnityEngine;
 
 namespace Project.Scripts.GamePlay.Character
 {
+    [RequireComponent(typeof(Rigidbody),typeof(CapsuleCollider2D))]
     public class PlayerMoveController : MonoBehaviour
     {
         private Rigidbody2D _rb;
-        //private CapsuleCollider2D _col;
+        private CapsuleCollider2D _col;
         private PhysicsCheck _physicsCheck;
         private Vector2 moveDirection;
         private bool isJumping;//跳跃状态
@@ -21,7 +22,7 @@ namespace Project.Scripts.GamePlay.Character
         {
             _rb = GetComponent<Rigidbody2D>();
             _physicsCheck = GetComponent<PhysicsCheck>();
-            //_col = GetComponent<CapsuleCollider2D>();
+            _col = GetComponent<CapsuleCollider2D>();
         }
         
         private void Update()

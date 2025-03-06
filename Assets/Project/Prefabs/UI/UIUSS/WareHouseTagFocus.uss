@@ -1,0 +1,9 @@
+.WareHouseTag:hover {
+    opacity: 1;
+    width: auto;
+    height: auto;
+    color: rgb(255, 0, 0);
+    transition-property: opacity, color;
+    transition-timing-function: ease-in-out, ease;
+    transition-duration: 1s, 1s;
+}

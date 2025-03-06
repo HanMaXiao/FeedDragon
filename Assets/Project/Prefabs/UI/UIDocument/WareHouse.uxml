@@ -1,0 +1,23 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Project/Prefabs/UI/WareHouseTag.uss?fileID=7433441132597879392&amp;guid=4dabf42bed474fc4f83149752741aff5&amp;type=3#WareHouseTag" />
+    <Style src="project://database/Assets/Project/Prefabs/UI/WareHouseTagFocus.uss?fileID=7433441132597879392&amp;guid=d3007a1730b8e6d45b1780c4cecbd795&amp;type=3#WareHouseTagFocus" />
+    <engine:VisualElement style="flex-grow: 1; position: absolute; top: 10%; left: 30%; bottom: 10%; right: 30%; flex-direction: column;">
+        <engine:VisualElement name="VisualElement" style="bottom: auto; position: relative; top: 0; right: 0; left: 0; align-self: stretch; height: 20%; flex-direction: row;">
+            <engine:VisualElement focusable="false" style="flex-grow: 1; align-self: stretch; align-items: stretch; justify-content: center;">
+                <engine:Label text="鱼类" name="Label" class="WareHouseTag" style="-unity-text-align: middle-center; opacity: 1;" />
+            </engine:VisualElement>
+            <engine:VisualElement focusable="false" style="flex-grow: 1; opacity: 1; align-items: stretch; justify-content: center;">
+                <engine:Label text="矿石" name="Label" focusable="false" class="WareHouseTag" style="-unity-text-align: middle-center; opacity: 1;" />
+            </engine:VisualElement>
+            <engine:VisualElement focusable="false" style="flex-grow: 1; justify-content: center;">
+                <engine:Label text="工具" class="WareHouseTag" style="-unity-text-align: middle-center; opacity: 1;" />
+            </engine:VisualElement>
+            <engine:VisualElement focusable="false" style="flex-grow: 1; justify-content: center;">
+                <engine:Label text="杂项" class="WareHouseTag" style="-unity-text-align: middle-center; opacity: 1;" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement style="flex-grow: 1; position: relative; left: auto; bottom: auto; right: auto; top: auto; align-self: stretch; height: 80%;">
+            <engine:MultiColumnListView name="MultiColumnListView" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
